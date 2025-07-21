@@ -1,81 +1,42 @@
+# 🧳 Wanderlust – Travel Listing Web App
 
-# Wanderlust (In Progress)
+Wanderlust is a full-stack travel listing platform that allows users to explore, create, edit, and manage travel destination listings. Built using **Node.js**, **Express**, **MongoDB**, **EJS**, and **Passport.js**, it mimics the functionality of platforms like Airbnb.
 
-Wanderlust is a full-stack travel accommodation listing web application (similar to Airbnb or YelpCamp). Users can browse, create, edit, and delete listings. This is a work-in-progress project built using Node.js, Express, MongoDB, and EJS.
+## 🌐 Live Demo
+👉 [Deployed on Render](https://majorproject-izey.onrender.com/)
 
----
+## 📸 Features
 
-## Project Status
+- 🛠️ Create, update, and delete travel listings  
+- 🔐 User authentication & authorization (Passport.js)  
+- ☁️ Image upload via Cloudinary + Multer  
+- 💬 Flash messages for user feedback  
+- 🌍 Responsive and interactive UI with EJS + Bootstrap  
+- 🧠 Middleware for error handling and validation  
 
- **Current Features:**
+## 🧰 Tech Stack
 
-- View all listings in a card-based layout  
-- Add, edit, and delete listings  
-- Listing details with dynamic routes  
-- Modularized EJS views using layouts/includes  
-- Sample listings seeding via script  
-- Basic styling with Bootstrap 5 and custom CSS  
+- **Frontend**: EJS, Bootstrap, JavaScript  
+- **Backend**: Node.js, Express  
+- **Database**: MongoDB with Mongoose  
+- **Auth**: Passport.js (Local Strategy)  
+- **Image Hosting**: Cloudinary  
+- **Hosting**: Render  
 
- **Upcoming Features:**
+## 📂 Folder Structure
 
-- User authentication (Passport.js)  
-- Flash messages & error handling  
-- Image upload via Cloudinary  
-- Maps integration using Mapbox  
-- Reviews & comments system  
+MajorProject/
+├── models/ # Mongoose schemas
+├── routes/ # Express routes
+├── views/ # EJS templates
+├── controllers/ # Route logic
+├── public/ # Static files (CSS, JS)
+├── utils/ # Custom error handlers, middleware
+├── App.js # Server entry point
+└── cloudConfig.js # Cloudinary configuration
 
----
+🙌 Author
+👨‍💻 Nilesh Jadhav
+🔗 LinkedIn {https://www.linkedin.com/in/nilesh-jadhav-81952b307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app}
+💻 GitHub {https://github.com/NileshJadhav045}
 
-## Tech Stack
-
-| Tech           | Use                            |
-|----------------|---------------------------------|
-| Node.js        | JavaScript runtime              |
-| Express.js     | Web framework                   |
-| MongoDB        | NoSQL database                  |
-| Mongoose       | MongoDB ODM                     |
-| EJS            | Templating engine               |
-| Bootstrap 5    | Frontend styling framework      |
-| FontAwesome    | Icons                           |
-
----
-
-## Project Structure
-
-```
-wanderlust/
-├── views/
-│   ├── listings/          # index, new, edit, show
-│   ├── includes/          # navbar, footer
-│   └── layouts/           # boilerplate.ejs
-├── public/
-│   └── CSS/style.css      # Custom styles
-├── models/listing.js      # Mongoose schema
-├── data.js                # Sample listings
-├── index.js               # DB seeding script
-```
-
----
-
-
-## Screens (coming soon)
-
-- Listings homepage
-- Add/Edit forms
-- Detail view page
-
----
-
-## Author
-
-**Nilesh Jadhav**  
-[GitHub](https://github.com/NileshJadhav045)  
-[nileshjadhav01776@gamil.com]
-
----
-
-
-##  Notes
-
-- Project is under active development.
-- Contributions or suggestions are welcome!
