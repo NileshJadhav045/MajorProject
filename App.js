@@ -49,7 +49,7 @@ const store = MongoStore.create({
 });
 
 store.on("error", () => {
-  console.log("ERROR IN MONGO SEDDION STORE", err);
+  console.log("ERROR IN MONGO SESSION STORE", err);
 });
 
 const sessionOption = {
@@ -83,6 +83,13 @@ app.use((req, res, next) => {
   res.locals.currUser = req.user;
 
   next();
+});
+
+const Listing = require("./models/listing.js");
+
+app.get("/", async (req, res) => {
+  const allListings = await Listing.find({});
+  res.render("listings/index", { allListings });
 });
 
 
